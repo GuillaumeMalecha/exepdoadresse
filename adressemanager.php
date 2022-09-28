@@ -20,7 +20,7 @@ class AdresseManager
     {
         $stmt = $this->connexion->prepare(
             'INSERT INTO adresse (rue, numero, localite, codepostal, pays)
-                VALUES (getRue, getNumero, getLocalite, getCodepostal, getPays)'
+                VALUES (:rue, :numero, :localite, :codepostal, :pays)'
            );
 
         $stmt->bindValue(':rue', $adresse->getRue());
