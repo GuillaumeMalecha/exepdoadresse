@@ -1,5 +1,7 @@
 <?php
 
+include_once ("adresse.php");
+
 class AdresseManager
 {
     private $connexion;
